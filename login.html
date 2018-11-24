@@ -1,0 +1,58 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+		
+<!-- Blog-login.html -->
+	 
+<html xmlns = "http://www.w3.org/1999/xhtml">
+
+	<head> 
+	<title> My Blog</title>
+
+	<style>
+	caption{
+	font-size:20pt;
+	margin-left: -40px;
+	}
+	</style>
+
+	</head>	
+	
+	<body>
+
+		<form action="login.php" method="post" name="Login_Form">
+		<table cellpadding="5" cellspacing="5">
+		<caption> Log in to add entry! </caption>
+		<?php if(isset($msg)){?>
+		<tr>
+		<td colspan="2" align="center" valign="top"><?php echo $msg;?></td>
+		</tr>
+		<?php } ?>
+		<tr>
+		<td><strong>Name:</strong></td>
+		<td>
+		<input type="text" name="Name" class="Input">  
+		</td>
+		</tr>
+		
+		<tr>
+		<td><strong>Password:</strong></td>
+		<td>
+		<input type="password" name="Password" class="Input"> 
+		</tr>
+
+		<tr>
+		<td></td>
+		<td>
+		<input name="Submit" type="submit" value="Login" class="Belongstobutton">
+		</td>
+		</tr>
+		
+		</table>
+		</form>
+
+ 
+	
+	</body>
+	
+</html>
